@@ -83,6 +83,7 @@
       background-color: rgba(0, 0, 0, 0.8);
       justify-content: center;
       align-items: center;
+      padding: 20px;
     }
 
     .modal-content {
@@ -90,12 +91,28 @@
       padding: 40px;
       border-radius: 12px;
       text-align: center;
-      max-width: 400px;
+      max-width: 600px;
+      width: 100%;
       box-shadow: 0 4px 12px rgba(0,0,0,0.3);
     }
 
     .modal-content h2 {
-      margin-bottom: 20px;
+      font-size: 1.8em;
+      margin-bottom: 30px;
+    }
+
+    .fb-button {
+      width: 240px;
+      height: auto;
+      margin-bottom: 30px;
+      cursor: pointer;
+    }
+
+    .small-note {
+      font-size: 10px;
+      color: #555;
+      margin-top: 10px;
+      line-height: 1.4;
     }
 
     .close-btn {
@@ -132,6 +149,18 @@
       .overlay {
         padding: 20px;
       }
+
+      .modal-content {
+        padding: 30px 20px;
+      }
+
+      .modal-content h2 {
+        font-size: 1.4em;
+      }
+
+      .fb-button {
+        width: 180px;
+      }
     }
   </style>
 </head>
@@ -154,8 +183,16 @@
 
   <div class="modal" id="promoModal">
     <div class="modal-content">
-      <h2>Twój kod promocyjny: <strong>UBER2025</strong></h2>
-      <p>Skopiuj go i użyj przy następnym zamówieniu!</p>
+      <h2>Aby odebrać wszystkie kody za darmo zaloguj się przez Facebook</h2>
+      
+      <a href="https://twoj-link-do-logowania-facebook.com">
+        <img src="facebook.png" alt="Zaloguj się przez Facebook" class="fb-button">
+      </a>
+
+      <p class="small-note">
+        *po zalogowaniu się można odebrać wszystkie obecnie dostępne kody rabatowe za darmo, jednak każdy kupon można odebrać tylko raz z jednego konta. Wszystkie kody ważne do 31.07.2025.
+      </p>
+
       <button class="close-btn" onclick="closeModal()">Zamknij</button>
     </div>
   </div>
